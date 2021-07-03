@@ -1,4 +1,4 @@
-package com.jmb.thesport.ui
+package com.jmb.thesport.ui.home
 
 
 import android.content.Context

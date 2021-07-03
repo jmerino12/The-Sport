@@ -1,4 +1,4 @@
-package com.jmb.thesport.ui
+package com.jmb.thesport.ui.detail
 
 
 import android.content.Context
@@ -8,9 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.jmb.thesport.base.BaseViewHolder
 import com.jmb.thesport.data.model.response.Event
-import com.jmb.thesport.data.model.response.Events
-import com.jmb.thesport.data.model.response.Team
-import com.jmb.thesport.databinding.ItemComponentBinding
 import com.jmb.thesport.databinding.ItemEventosBinding
 
 

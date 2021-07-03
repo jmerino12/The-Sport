@@ -1,4 +1,4 @@
-package com.jmb.thesport.ui
+package com.jmb.thesport.ui.detail
 
 import android.content.Intent
 import android.net.Uri
@@ -38,10 +38,6 @@ class DetailFragment : Fragment() {
 
     val args: DetailFragmentArgs by navArgs()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,7 +66,6 @@ class DetailFragment : Fragment() {
             when (it) {
                 is Resource.Loading -> {
                 }
-
                 is Resource.Success -> {
                     binding.rvEventos.adapter = EventsAdapter(requireContext(), it.data.event)
                 }

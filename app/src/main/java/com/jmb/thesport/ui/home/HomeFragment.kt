@@ -1,4 +1,4 @@
-package com.jmb.thesport.ui
+package com.jmb.thesport.ui.home
 
 import android.os.Bundle
 import android.util.Log
