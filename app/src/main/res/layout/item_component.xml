@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/material_filled_edittext_font_2_0_padding_bottom"
+    android:layout_marginTop="@dimen/material_filled_edittext_font_2_0_padding_bottom"
+    android:layout_marginEnd="@dimen/material_filled_edittext_font_2_0_padding_bottom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/phto"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_img_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/estadio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/tv_Name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_item"
+            android:padding="@dimen/common_padding_min"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintGuide_percent="0.8"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/nombreEquipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+
+                    app:layout_constraintBottom_toBottomOf="@id/escudoEquipo"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/escudoEquipo"
+                    tools:text="Deportivo Alavés" />
+
+                <TextView
+                    android:id="@+id/nombreEstadio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceSubtitle1"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    app:layout_constraintBottom_toBottomOf="@id/escudoEquipo"
+                    app:layout_constraintEnd_toStartOf="@+id/guideLine"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@id/nombreEquipo"
+                    app:layout_constraintTop_toTopOf="@id/escudoEquipo"
+                    app:layout_constraintVertical_bias="1"
+                    tools:text="Mendizorroza" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/escudoEquipo"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:src="@drawable/escudo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/guideLine"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
